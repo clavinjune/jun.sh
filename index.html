@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jun's links">
+    <title>jun.sh</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        background: #111;
+        color: #f4f1e8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+
+      main {
+        width: min(100%, 30rem);
+      }
+
+      h1 {
+        margin: 0 0 2rem;
+        font-size: clamp(2.5rem, 12vw, 5rem);
+        letter-spacing: -0.08em;
+      }
+
+      nav {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      a {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-bottom: 1px solid #4a4945;
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a::after {
+        content: "->";
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: #d6ff4b;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>jun.sh</h1>
+      <nav aria-label="Links">
+        <a href="/cal">Calendar</a>
+        <a href="/cv">CV</a>
+        <a href="/blog">Blog</a>
+      </nav>
+    </main>
+  </body>
+</html>
